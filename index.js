@@ -20,7 +20,7 @@ app.use(express.json());
 // Parse urlencoded form data
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", function (req, res) {
+app.get(/.*/, function (req, res) {
   res.send("Hello World!");
 });
 
